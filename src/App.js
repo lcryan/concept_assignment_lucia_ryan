@@ -16,10 +16,13 @@ function App() {
                             <li>nav item 1</li>
                         </ul>
 
-                        <img src={Logo} alt='reddit-logo'/>
+                        <img src={Logo} id="logo-image" alt='reddit-logo'/>
+
                         <h1>Reddit</h1>
                     </nav>
                 </div>
+
+
             </header>
         </>
     );
