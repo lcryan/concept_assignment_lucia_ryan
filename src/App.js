@@ -1,17 +1,28 @@
 import './index.css'
 import './App.css'
+import Logo from './assets/logo.png'
 
 function App() {
-  return (
+    return (
 
-      <>
+        <>
+            <header className="app-header">
 
-        <h1>This is a header</h1>
-        <p>This is some text </p>
+                <div className="inner-container">
+                    <nav>
+                        <ul>
+                            <li>nav item 1</li>
+                            <li>nav item 1</li>
+                            <li>nav item 1</li>
+                        </ul>
 
-
-    </>
-  );
+                        <img src={Logo} alt='reddit-logo'/>
+                        <h1>Reddit</h1>
+                    </nav>
+                </div>
+            </header>
+        </>
+    );
 }
 
 export default App;
