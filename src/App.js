@@ -1,36 +1,20 @@
 import './index.css'
 import './App.css'
-import Logo from './assets/logo.png'
 import {Route, Routes} from 'react-router-dom'
+import Navigation from './components/Navigation'
+import NotFound from './pages/notfound/NotFound'
 import Home from './pages/home/Home'
+import Subreddit from './pages/subreddit/Subreddit'
 
 function App() {
     return (
-
-
         <>
-            <header className="app-header">
-                <div className="inner-container">
-                    <nav className="navigation-bar">
-                        <ul>
-                            <li>hottest spots</li>
-                            <li>reddit</li>
-                            <li>memes</li>
-                        </ul>
-                    </nav>
-
-                    {/*<Routes>
-                        <Route path="/" element={<Home/>}/>
-                    </Routes>*/}
-
-
-                    <img src={Logo} id="logo-image" alt='reddit-logo'/>
-                    <h1>Reddit</h1>
-
-                </div>
-
-
-            </header>
+            <Navigation/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/subreddit/:SubredditId" element={<Subreddit/>}/>
+                <Route path="*" element={<NotFound/>}/>
+            </Routes>
         </>
     );
 }
