@@ -1,18 +1,15 @@
 import './index.css'
 import './App.css'
 import Logo from './assets/logo.png'
-import {BrowserRouter as Router} from "react-router-dom";
-import {Routes, Route} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
+import Home from './pages/home/Home'
 
 function App() {
     return (
 
 
         <>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
 
-            </Routes>
 
 
             <header className="app-header">
@@ -26,6 +23,15 @@ function App() {
                             <li>nav item 1</li>
                         </ul>
                     </nav>
+
+                    {/*<Routes>
+                        <Route path="/" element={<Home/>}/>
+                    </Routes>*/}
+
+
+
+
+
 
                     <img src={Logo} id="logo-image" alt='reddit-logo'/>
                     <h1>Reddit</h1>

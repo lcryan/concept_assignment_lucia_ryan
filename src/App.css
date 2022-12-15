@@ -1,20 +1,24 @@
 /*/
 colour codes for later:
-*Rood #dd3038;
-Oranje #e7613a;
-Licht oranje #FDF4F2;
+*Rood
+Oranje
+Licht oranje ;
 Zwart #292929 (voor standaard tekst);
 Wit #FFFFFF;*!*/
+/*Globals*/
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,800;1,900&display=swap');
+:root{
 
-:root {
-    --main-heading-font-family: 'Roboto Condensed', sans-serif;
-    --main-text-font-family: 'Quicksand', sans-serif;
-    --standard-font-text-color: #0C0C0C;
+    --ff-roboto-text: 'Roboto Condensed', sans-serif;
+    --ff-quicksand-heading: 'Quicksand', sans-serif;
+    --ff-black-standard-text: #292929;
+    --ff-white-color: #FFFFFF;
+    --ff-red-general-background-color: #dd3038;
+    --ff-orange: #e7613a;
+    --ff-light-orange:#FDF4F2;
+
 }
+
 
 
 
@@ -39,7 +43,7 @@ body {
 }
 
 h1 {
-    font-family: var(--main-text-font-family);
+    font-family: var(--ff-quicksand-heading);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,7 +51,7 @@ h1 {
 }
 
 .navigation-bar{
-    font-family: var(--main-heading-font-family);
+    font-family: var(--ff-roboto-text);
     font-size: 15px;
     display: flex;
     flex-direction: row;
@@ -55,7 +59,7 @@ h1 {
 }
 
 img {
-    width: 50px;
+    width: 100px;
 }
 
 ul {
@@ -66,11 +70,10 @@ ul {
     flex-basis: 300px;
     color: #FFFFFF;
 
-
 }
 
 header {
-    background-color: #dd3038;
+        background-color: var(--ff-red-general-background-color);
 }
 
 
