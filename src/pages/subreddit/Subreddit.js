@@ -1,11 +1,12 @@
 import React from 'react';
-import Navigation from "../../components/Navigation";
+
 
 function Subreddit() {
     return (
         <>
-            <Navigation/>
+            <main className="subreddit-page">
             What the hell is a subreddit ?!?!
+            </main>
         </>
     );
 }
