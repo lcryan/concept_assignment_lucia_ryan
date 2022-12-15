@@ -1,26 +1,16 @@
-/*/
-colour codes for later:
-*Rood
-Oranje
-Licht oranje ;
-Zwart #292929 (voor standaard tekst);
-Wit #FFFFFF;*!*/
+
 /*Globals*/
 
-:root{
-
+:root {
     --ff-roboto-text: 'Roboto Condensed', sans-serif;
     --ff-quicksand-heading: 'Quicksand', sans-serif;
     --ff-black-standard-text: #292929;
     --ff-white-color: #FFFFFF;
     --ff-red-general-background-color: #dd3038;
     --ff-orange: #e7613a;
-    --ff-light-orange:#FDF4F2;
-
+    --ff-light-orange: #FDF4F2;
+    --ff-uppercase: uppercase;
 }
-
-
-
 
 
 * {
@@ -29,7 +19,7 @@ Wit #FFFFFF;*!*/
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 10px;
 }
 
@@ -50,12 +40,13 @@ h1 {
     align-items: center;
 }
 
-.navigation-bar{
+.navigation-bar {
     font-family: var(--ff-roboto-text);
     font-size: 15px;
     display: flex;
     flex-direction: row;
     justify-content: right;
+
 }
 
 img {
@@ -69,11 +60,12 @@ ul {
     justify-content: space-between;
     flex-basis: 300px;
     color: #FFFFFF;
+    text-transform: var(--ff-uppercase);
 
 }
 
 header {
-        background-color: var(--ff-red-general-background-color);
+    background-color: var(--ff-red-general-background-color);
 }
 
 
