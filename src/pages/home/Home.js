@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Logo from "../../assets/logo.png";
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 
 function Home() {
@@ -41,6 +42,9 @@ function Home() {
                                 {oneReddit.map((reddit) => {
                                     return (
                                         <article key={reddit.data.id}>
+                                            <h3><Link
+                                                to={`/subreddit/${reddit.data.subreddit}`}>{reddit.data.subreddit}</Link>
+                                            </h3>
                                             <h3>{reddit.data.title}</h3>
                                             <p>{reddit.data.subreddit_name_prefixed}</p>
                                             <p>Comments {reddit.data.num_comments}</p>
