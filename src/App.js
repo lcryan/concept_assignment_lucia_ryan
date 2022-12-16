@@ -16,7 +16,7 @@ function App() {
             <Navigation/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/subreddit/:SubredditId" element={<Subreddit/>}/>
+                <Route path="/subreddit/:subredditId" element={<Subreddit/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </>
