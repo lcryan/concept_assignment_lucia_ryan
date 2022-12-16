@@ -3,7 +3,6 @@ import Logo from "../../assets/logo.png";
 import axios from "axios";
 
 
-
 function Home() {
     const [oneReddit, setOneReddit] = useState([]);
     useEffect(() => {
@@ -30,8 +29,8 @@ function Home() {
         <>
             <header className="outer-container">
                 <div className="inner-container">
-                <img src={Logo} id="logo-image" alt='reddit-logo'/>
-                <h1>Reddit</h1>
+                    <img src={Logo} id="logo-image" alt='reddit-logo'/>
+                    <h1>Reddit</h1>
                 </div>
             </header>
 
@@ -42,13 +41,15 @@ function Home() {
                     <section className="reddit-posts">
                         <article className="reddit-posts">
                             <div className="reddit-post-list">
-                                {oneReddit.map((reddit)=>{
+                                {oneReddit.map((reddit) => {
                                     return (
-                                    <article key={reddit.data.id}>
-                                        <h3>{reddit.data.title}</h3>
-                                    </article>
-
-                                )
+                                        <article key={reddit.data.id}>
+                                            <h3>{reddit.data.title}</h3>
+                                            <p>{reddit.data.subreddit_name_prefixed}</p>
+                                            <p>Comments {reddit.data.num_comments}</p>
+                                            <p>Ups {reddit.data.ups}</p>
+                                        </article>
+                                    )
                                 })}
                             </div>
                         </article>
@@ -56,6 +57,9 @@ function Home() {
                 </div>
             </main>
         </>
-    )}          export default Home;
+    )
+}
+
+export default Home;
 
 
