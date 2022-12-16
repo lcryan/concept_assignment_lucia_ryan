@@ -9,10 +9,7 @@ function Home() {
         async function getOneReddit() {
 
             try {
-
                 const response = await axios.get("https://www.reddit.com/hot.json?limit=15")
-                /*console.log(response.data.data.children[0])*/
-                /*setOneReddit(response)*/
                 setOneReddit(response.data.data.children) /*this is only for the 15 posts ! */
             } catch (e) {
                 console.log(e)

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigation.css'
-import {NavLink} from "react-router-dom";
+
 
 
 function Navigation() {
@@ -10,7 +10,7 @@ function Navigation() {
                 <div className="inner-container">
                     <nav className="navigation-bar">
                         <ul>
-                            <li>hottest spots</li>
+                            <li>hottest posts</li>
                             <li>reddit</li>
                             <li>memes</li>
                         </ul>
