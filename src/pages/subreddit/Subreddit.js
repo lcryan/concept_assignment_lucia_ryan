@@ -25,9 +25,9 @@ function SubredditPage() {
 
         }
 
-        if (id) {
-            getDetails()
-        }
+
+        getDetails()
+
     }, [id])
 
 
@@ -36,7 +36,7 @@ function SubredditPage() {
 
         <>
 
-<h1>r/{id}</h1>
+            <h1>r/{id}</h1>
 
             <h4>Subreddit Specifications</h4>
             <main className="subreddit-specs-page">
