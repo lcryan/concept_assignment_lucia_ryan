@@ -27,39 +27,40 @@ function Home() {
 
     return (
         <>
-           <Header
-               nameOfListItem1= "hottest posts"
-               nameOfListItem2 ="reddit"
-               nameOfListItem3 ="memes"
-               image={Logo}
-               pageTitle="Reddit"
-           />
+            <Header
+                nameOfListItem1="hottest posts"
+                nameOfListItem2="reddit"
+                nameOfListItem3="memes"
+                image={Logo}
+                pageTitle="Reddit"
+            />
 
-            <main className="outer-container">
-                <div className="inner-container">
-                    <h2>hottest posts</h2>
-                    <h4>on reddit right now</h4>
-                    <section className="reddit-posts">
-                        <article className="reddit-posts">
-                            <div className="reddit-post-list">
-                                {oneReddit.map((reddit) => {
-                                    return (
-                                        <article key={reddit.data.id}>
-                                            <h3><Link
+            <div className="outer-container">
+                <h2>Hottest posts</h2>
+                <h4>on Reddit right now</h4>
+            </div>
+            <div className="inner-container-posts">
+                    <article className="reddit-post">
+                        <div className="reddit-post-list">
+                            {oneReddit.map((reddit) => {
+                                return (
+                                    <article key={reddit.data.id}>
+                                        <h3>{reddit.data.title}</h3>
+                                        <div className="post-traffic-details">
+                                            <h4><Link
                                                 to={`/subreddit/${reddit.data.subreddit}`}>{reddit.data.subreddit}</Link>
-                                            </h3>
-                                            <h3>{reddit.data.title}</h3>
+                                            </h4>
                                             <p>{reddit.data.subreddit_name_prefixed}</p>
                                             <p>Comments {reddit.data.num_comments}</p>
                                             <p>Ups {reddit.data.ups}</p>
-                                        </article>
-                                    )
-                                })}
-                            </div>
-                        </article>
-                    </section>
-                </div>
-            </main>
+                                        </div>
+                                    </article>
+                                )
+                            })}
+                        </div>
+                    </article>
+
+            </div>
         </>
     )
 }
