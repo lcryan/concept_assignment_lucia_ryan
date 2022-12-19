@@ -41,27 +41,27 @@ function Home() {
             </div>
             <div className="inner-container-posts">
 
-                        <div className="reddit-post-list">
-                            {oneReddit.map((reddit) => {
-                                return (
-                                    <article className="reddit-post" key={reddit.data.id}>
-                                        <h4 className="reddit-post-title">{reddit.data.title}</h4>
-                                        <div className="post-traffic-details">
-                                            <h4 className="link-to-post"><Link
-                                                to={`/subreddit/${reddit.data.subreddit}`}>{reddit.data.subreddit}</Link>
-                                            </h4>
-                                            <p>Comments {reddit.data.num_comments}</p>
-                                            <p> - Ups {reddit.data.ups}</p>
-                                        </div>
-                                    </article>
-                                )
-                            })}
-                        </div>
+                <div className="reddit-post-list">
+                    {oneReddit.map((reddit) => {
+                        return (
+                            <article className="reddit-post" key={reddit.data.id}>
+                                <h4 className="reddit-post-title">{reddit.data.title}</h4>
+                                <div className="post-traffic-details">
+                                    <h4 className="link-to-post"><Link
+                                        to={`/subreddit/${reddit.data.subreddit}`}>{reddit.data.subreddit}</Link>
+                                    </h4>
+                                    <p>Comments {reddit.data.num_comments}</p>
+                                    <p> - Ups {reddit.data.ups}</p>
+                                </div>
+                            </article>
+                        )
+                    })}
+                </div>
 
             </div>
 
             <footer className="page-footer">
-
+                <p>In opdracht van NOVI Hogeschool © 2022</p>
 
             </footer>
         </>
