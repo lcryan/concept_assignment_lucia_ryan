@@ -35,11 +35,10 @@ h2 {
     flex-wrap: wrap;
     border: none;
     background-color: #FFFFFF;
-    flex-basis: 300px;
+    flex-basis: 100px;
     margin-bottom: 30px;
     padding-right: 10px;
     box-shadow: 9px 13px 19px -8px rgba(0, 0, 0, 0.44);
-
 }
 
 .reddit-post-title {
@@ -67,4 +66,5 @@ h2 {
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    font-size: 10px;
 }
