@@ -37,7 +37,7 @@ function Home() {
 
             <div className="outer-container">
                 <h2>Hottest posts</h2>
-                <h4>on Reddit right now</h4>
+                <h4 className="subtitle">on Reddit right now</h4>
             </div>
             <div className="inner-container-posts">
                     <article className="reddit-post">

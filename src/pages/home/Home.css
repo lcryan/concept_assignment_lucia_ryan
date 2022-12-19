@@ -9,15 +9,24 @@
     background-color: beige;
 }
 
-h2{
+h2 {
     font-size: 30px;
 }
 
-h4{
+.subtitle {
     font-size: 10px;
 }
 
 
 .inner-container-posts {
     background-color: beige;
+    column-count: 3;
+    display: inline-block;
+    padding-left: 300px;
+    padding-right: 300px;
+    flex-wrap: wrap;
+}
+
+h3 {
+    flex-wrap: wrap;
 }
