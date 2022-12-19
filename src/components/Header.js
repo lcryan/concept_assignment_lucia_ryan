@@ -1,10 +1,10 @@
 import React from 'react';
 import './Header.css'
 
-function Header({nameOfListItem1, nameOfListItem2, nameOfListItem3, image, imageDescription, pageTitle}) {
+function Header({nameOfListItem1, nameOfListItem2, nameOfListItem3, image, imageDescription, pageTitle, pageSubtitle}) {
     return (
         <div>
-            <header>
+            {/*<header>*/}
                 <article className="header">
                     <div className="inner-container">
                         <nav className="navigation-bar">
@@ -14,11 +14,15 @@ function Header({nameOfListItem1, nameOfListItem2, nameOfListItem3, image, image
                                 <li>{nameOfListItem3}</li>
                             </ul>
                         </nav>
+                        <article className="image-title">
                         <img src={image} alt={imageDescription} className="page-image"/>
+                        </article>
                         <h1 className="page-title">{pageTitle}</h1>
+                        <p className="page-subtitle">{pageSubtitle}</p>
+
                     </div>
                 </article>
-            </header>
+            {/*</header>*/}
         </div>
     );
 }

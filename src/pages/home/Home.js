@@ -3,6 +3,7 @@ import Logo from "../../assets/logo.png";
 import axios from "axios";
 import {Link} from "react-router-dom";
 import Header from "../../components/Header";
+import './Home.css'
 
 
 function Home() {
@@ -27,12 +28,11 @@ function Home() {
     return (
         <>
            <Header
-
                nameOfListItem1= "hottest posts"
                nameOfListItem2 ="reddit"
                nameOfListItem3 ="memes"
-
-
+               image={Logo}
+               pageTitle="Reddit"
            />
 
             <main className="outer-container">
