@@ -61,7 +61,7 @@ h2 {
 
 .page-footer {
     background-color: var(--ff-black-standard-text);
-    height: 50px;
+    height: 30px;
     color: var(--ff-white-color);
     font-family: var(--main-text-font-family);
     display: flex;

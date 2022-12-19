@@ -36,25 +36,37 @@ function SubredditPage() {
 
         <>
 
-            <h1>r/{id}</h1>
+            <Header
 
-            <h4>Subreddit Specifications</h4>
+                nameOfListItem1="hottest posts"
+                nameOfListItem2="reddit"
+                nameOfListItem3="memes"
+                pageTitle={id}
+                pageSubtitle="Subreddit Specifications"
+            />
+
             <main className="subreddit-specs-page">
                 <section className="outer-container-specs">
                     <div className="inner-container-specs">
                         {Object.keys(redditDetails).length > 0 && (
                             <div className="all-details-per-reddit">
-                                <h2> Title : {redditDetails.title}</h2>
-                                <p>Description: {redditDetails.public_description}</p>
+                                <h3 className="titles"> Title: </h3>
+                               <p>{redditDetails.title}</p>
 
-                                <p> Subscribers : {redditDetails.subscribers}</p>
+                                <h3 className="titles">Description: </h3>
+                                  <p>{redditDetails.public_description}</p>
+
+                            <h3 className="titles"> Subscribers : </h3>
+                                <p>{redditDetails.subscribers}</p>
+                                <div className="home-link">
+                                    <Link to="/"><p> Take me back home!</p></Link>
+                                </div>
+
                             </div>
                         )}
                     </div>
                 </section>
-                <div className="home-link">
-                    <Link to="/"><p>Take me back home!</p></Link>
-                </div>
+
             </main>
         </>
     );

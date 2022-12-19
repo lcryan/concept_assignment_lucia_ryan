@@ -4,7 +4,7 @@ import './Header.css'
 function Header({nameOfListItem1, nameOfListItem2, nameOfListItem3, image, imageDescription, pageTitle, pageSubtitle}) {
     return (
         <div>
-            {/*<header>*/}
+
                 <article className="header">
                     <div className="inner-container">
                         <nav className="navigation-bar">
@@ -22,7 +22,7 @@ function Header({nameOfListItem1, nameOfListItem2, nameOfListItem3, image, image
 
                     </div>
                 </article>
-            {/*</header>*/}
+
         </div>
     );
 }
