@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import axios from "axios";
 import './Subreddit.css'
 import Header from "../../components/Header";
@@ -51,8 +51,10 @@ function SubredditPage() {
                             </div>
                         )}
                     </div>
-
                 </section>
+                <div className="home-link">
+                    <Link to="/"><p>Take me back home!</p></Link>
+                </div>
             </main>
         </>
     );

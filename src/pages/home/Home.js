@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Logo from "../../assets/logo.png";
 import axios from "axios";
 import {Link} from "react-router-dom";
+import Header from "../../components/Header";
 
 
 function Home() {
@@ -25,12 +26,14 @@ function Home() {
 
     return (
         <>
-            <header className="outer-container">
-                <div className="inner-container">
-                    <img src={Logo} id="logo-image" alt='reddit-logo'/>
-                    <h1>Reddit</h1>
-                </div>
-            </header>
+           <Header
+
+               nameOfListItem1= "hottest posts"
+               nameOfListItem2 ="reddit"
+               nameOfListItem3 ="memes"
+
+
+           />
 
             <main className="outer-container">
                 <div className="inner-container">
