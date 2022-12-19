@@ -19,7 +19,7 @@ h2 {
 }
 
 
-.reddit-post-list{
+.reddit-post-list {
     display: inline-block;
     columns: 3;
     padding-left: 250px;
@@ -38,7 +38,7 @@ h2 {
     flex-basis: 300px;
     margin-bottom: 30px;
     padding-right: 10px;
-box-shadow: 9px 13px 19px -8px rgba(0,0,0,0.44);
+    box-shadow: 9px 13px 19px -8px rgba(0, 0, 0, 0.44);
 
 }
 
@@ -57,4 +57,14 @@ box-shadow: 9px 13px 19px -8px rgba(0,0,0,0.44);
     padding-bottom: 20px;
     margin-bottom: 10px;
     padding-left: 10px;
+}
+
+.page-footer {
+    background-color: var(--ff-black-standard-text);
+    height: 50px;
+    color: var(--ff-white-color);
+    font-family: var(--main-text-font-family);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }

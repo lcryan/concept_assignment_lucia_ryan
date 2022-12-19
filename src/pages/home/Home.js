@@ -61,7 +61,7 @@ function Home() {
             </div>
 
             <footer className="page-footer">
-                <p>In opdracht van NOVI Hogeschool © 2022</p>
+                <p>In opdracht van <>Novi</> Hogeschool © 2022</p>
 
             </footer>
         </>
