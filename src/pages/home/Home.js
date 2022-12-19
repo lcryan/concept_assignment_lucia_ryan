@@ -59,6 +59,11 @@ function Home() {
                         </div>
 
             </div>
+
+            <footer className="page-footer">
+
+
+            </footer>
         </>
     )
 }
