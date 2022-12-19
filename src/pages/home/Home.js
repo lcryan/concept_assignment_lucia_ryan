@@ -45,7 +45,9 @@ function Home() {
                     {oneReddit.map((reddit) => {
                         return (
                             <article className="reddit-post" key={reddit.data.id}>
-                                <h4 className="reddit-post-title">{reddit.data.title}</h4>
+                                <a href={reddit.data.url} className="link-to-subreddit-post">
+                                    <h4 className="reddit-post-title">{reddit.data.title}</h4>
+                                </a>
                                 <div className="post-traffic-details">
                                     <h4 className="link-to-post"><Link
                                         to={`/subreddit/${reddit.data.subreddit}`}>{reddit.data.subreddit}</Link>
