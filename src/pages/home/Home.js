@@ -40,25 +40,23 @@ function Home() {
                 <h4 className="subtitle">on Reddit right now</h4>
             </div>
             <div className="inner-container-posts">
-                    <article className="reddit-post">
+
                         <div className="reddit-post-list">
                             {oneReddit.map((reddit) => {
                                 return (
-                                    <article key={reddit.data.id}>
-                                        <h3>{reddit.data.title}</h3>
+                                    <article className="reddit-post" key={reddit.data.id}>
+                                        <h4 className="reddit-post-title">{reddit.data.title}</h4>
                                         <div className="post-traffic-details">
-                                            <h4><Link
+                                            <h4 className="link-to-post"><Link
                                                 to={`/subreddit/${reddit.data.subreddit}`}>{reddit.data.subreddit}</Link>
                                             </h4>
-                                            <p>{reddit.data.subreddit_name_prefixed}</p>
                                             <p>Comments {reddit.data.num_comments}</p>
-                                            <p>Ups {reddit.data.ups}</p>
+                                            <p> - Ups {reddit.data.ups}</p>
                                         </div>
                                     </article>
                                 )
                             })}
                         </div>
-                    </article>
 
             </div>
         </>

@@ -4,9 +4,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: beige;
+    background-color: var(--ff-white-color)
 }
 
 h2 {
@@ -18,15 +19,31 @@ h2 {
 }
 
 
-.inner-container-posts {
-    background-color: beige;
-    column-count: 3;
+.inner-container-posts{
     display: inline-block;
-    padding-left: 300px;
-    padding-right: 300px;
+    background-color: var(--ff-white-color);
+    padding-left: 200px;
+    padding-right: 200px;
+    columns: 3;
+    vertical-align: text-top;
+    gap: 50px;
+    horiz-align: center;
+}
+
+.reddit-post {
+    width: auto;
     flex-wrap: wrap;
 }
 
-h3 {
-    flex-wrap: wrap;
+.reddit-post-title {
+    font-family: var(--main-text-font-family);
+    font-size: 15px;
+    margin-bottom: 65px;
+}
+
+.post-traffic-details {
+    font-family: var(--main-text-font-family);
+    font-size: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
